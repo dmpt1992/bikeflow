@@ -1,9 +1,9 @@
 const images = [
-    'img/bg1.jpeg',
-    'img/bg2.jpeg',
-    'img/bg3.jpeg',
-    'img/bg4.jpeg',
-    'img/bg5.jpeg'
+    'img/bg1.jpg',
+    'img/bg2.jpg',
+    'img/bg3.jpg',
+    'img/bg4.jpg',
+    'img/bg5.jpg'
 ];
 
 let current = 0;
