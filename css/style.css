@@ -38,7 +38,7 @@ body {
     position: relative;
     z-index: 2;
     height: 100%;
-    padding: 60px;
+    padding: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,10 +74,11 @@ body {
 
 /* RIGHT */
 .right {
-    text-align: right;
+    text-align: center;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 1px;
+    font-weight: 600;
 }
 
 /* MOBILE */
