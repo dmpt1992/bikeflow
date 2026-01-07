@@ -97,3 +97,21 @@ body {
     }
 }
 
+
+
+
+/* SEO ONLY (hidden but readable by Google) */
+.seo-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+/* LOGO IMAGE */
+.logo {
+    max-width: 260px;
+    height: auto;
+}
+
