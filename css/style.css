@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +7,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
     font-weight: 600;
+    overflow: hidden;
 }
 
 /* HERO */
@@ -30,13 +31,11 @@ body {
     will-change: opacity;
 }
 
-
-
-/* DARK OVERLAY */
+/* OVERLAY */
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0, 0, 0, 0.35);
 }
 
 /* CONTENT */
@@ -62,67 +61,13 @@ body {
     margin: 10px 0 40px;
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #fff;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #000;
-    color: #fff;
-}
-
-/* RIGHT */
-.right {
-    text-align: center;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .right {
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .left .logo {
-        font-size: 70px;
-    }
-}
-
-
-
-
-/* SEO ONLY (hidden but readable by Google) */
-.seo-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-}
-
-/* LOGO IMAGE */
+/* LOGO IMAGE (base) */
 .logo {
     max-width: 240px;
     margin-bottom: 10px;
 }
 
-
+/* BUTTONS */
 .buttons {
     display: flex;
     gap: 15px;
@@ -130,6 +75,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     padding: 12px 26px;
     background: #fff;
     color: #000;
@@ -156,14 +102,17 @@ body {
     color: #000;
 }
 
-
+/* RIGHT */
 .right {
     text-align: center;
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1.5px;
+    font-weight: 600;
     max-width: 420px;
 }
+
+/* DECOR */
 .til {
     width: 90px;
     opacity: 0.8;
@@ -176,16 +125,37 @@ body {
 .til.bottom {
     margin-top: 20px;
 }
+
+/* SEO ONLY */
+.seo-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
+
     .content {
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
 
-    .right {
+    .left {
         text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .right {
+        margin-top: 20px;
         margin-bottom: 40px;
+        font-size: 12px;
+        text-align: center;
     }
 
     .buttons {
@@ -193,9 +163,39 @@ body {
         flex-wrap: wrap;
     }
 
+    .logo {
+        max-width: 100px;
+    }
 
-        .left {
-        text-align: center;
-        margin-top: 40px;
+    .btn {
+        padding: 10px 15px;
+        font-size: 10px;
+        border-radius: 3px;
     }
 }
+
+
+
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 3.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity;
+}
+
+.slider.active {
+    opacity: 1;
+}
+
+
+
+@media (min-width: 769px) {
+    .slider {
+        background-position: center 65%;
+    }
+}
+
