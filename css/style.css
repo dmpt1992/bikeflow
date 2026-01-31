@@ -172,12 +172,12 @@ body{
 
 /* RIGHT PANEL */
 .right{
-  border: 1px solid var(--stroke);
-  background: var(--glass);
-  backdrop-filter: blur(14px);
-  border-radius: 22px;
-  padding: 18px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    border: 1px solid var(--stroke);
+    background: rgb(225 225 225 / 34%);
+    backdrop-filter: blur(2px);
+    border-radius: 22px;
+    padding: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
 }
 
 .panel-head{
