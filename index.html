@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- BASIC SEO -->
     <meta charset="UTF-8">
 
     <!-- FAVICON -->
@@ -14,9 +13,7 @@
     <link rel="canonical" href="https://bikeflow.pt/" />
 
     <title>BikeFlow Ferragudo | Bike & E-Bike Hire in Ferragudo, Algarve</title>
-
     <meta name="description" content="Bike and e-bike rentals in Ferragudo, Algarve. Helmet & lock included. No deposit required. Delivery & pick-up available. Book online with Flow Ferragudo.">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- OPEN GRAPH -->
@@ -28,11 +25,6 @@
 
     <!-- PRELOAD FIRST IMAGE -->
     <link rel="preload" as="image" href="img/bg1.jpg">
-
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/style.css">
@@ -56,28 +48,27 @@
 </head>
 
 <body>
-
-    <!-- H1 for SEO (hidden visually) -->
     <h1 class="seo-only">Ferragudo Bike Rentals – Bike and E-Bike Hire in Ferragudo Algarve</h1>
 
-    <section class="hero">
+    <!-- Logo discreto no canto superior esquerdo -->
+    <header class="site-header">
+        <a class="brand" href="https://flowferragudo.pt/rent/bicycles/" target="_blank" rel="noopener">
+            <img src="img/flow-logo.png" alt="Flow Ferragudo" class="brand-logo">
+        </a>
+    </header>
 
-        <div class="slider"></div>
-        <div class="overlay"></div>
+    <section class="hero">
+        <div class="slider" aria-hidden="true"></div>
+        <div class="overlay" aria-hidden="true"></div>
 
         <div class="content">
-
-            <!-- LEFT -->
             <div class="left">
-
-                <img src="img/flow-logo.png" alt="Flow Ferragudo Bike Rentals Logo" class="logo">
-
-                <p class="subtitle">FERRAGUDO BIKE RENTALS</p>
+                <p class="kicker">FERRAGUDO BIKE RENTALS</p>
 
                 <div class="headline">
-                    Bikes &<br>
-                    E-Bikes<br>
-                    in Ferragudo
+                    BIKES &amp;<br>
+                    E-BIKES<br>
+                    IN FERRAGUDO
                 </div>
 
                 <p class="lead">
@@ -86,23 +77,23 @@
 
                 <div class="buttons">
                     <a href="https://flowferragudo.pt/rent/bicycles/" class="btn btn-primary" target="_blank" rel="noopener">
-                        BOOK NOW →
+                        BOOK NOW
                     </a>
-                    <a href="https://flowferragudo.pt/rent/bicycles/" class="btn btn-outline" target="_blank" rel="noopener">
+
+                    <a href="https://flowferragudo.pt/rent/bicycles/" class="btn btn-ghost" target="_blank" rel="noopener">
                         MORE INFO
                     </a>
-                    <a href="https://wa.me/351925392982" class="btn btn-outline" target="_blank" rel="noopener">
+
+                    <a href="https://wa.me/351925392982" class="btn btn-ghost" target="_blank" rel="noopener">
                         WHATSAPP
                     </a>
                 </div>
-
             </div>
 
-            <!-- RIGHT -->
-            <aside class="right">
-
-                <div class="panel-title">
+            <aside class="right" aria-label="Bike rental highlights">
+                <div class="panel-head">
                     <strong>WHAT YOU GET</strong>
+                    <!-- se til.png não existir, não quebra: escondido via CSS quando falha -->
                     <img src="img/til.png" alt="" class="til">
                 </div>
 
@@ -112,7 +103,7 @@
                         <span>City · Touring · E-Bike</span>
                     </div>
                     <div class="feature">
-                        HELMET & LOCK INCLUDED.
+                        HELMET &amp; LOCK INCLUDED.
                         <span>Ready to ride</span>
                     </div>
                     <div class="feature">
@@ -120,31 +111,22 @@
                         <span>Simple checkout</span>
                     </div>
                     <div class="feature">
-                        DELIVERY & PICK UP.
+                        DELIVERY &amp; PICK UP.
                         <span>Ask on checkout</span>
                     </div>
                     <div class="feature full">
                         FREE BIKE ROUTES ON YOUR SMARTPHONE.
-                        <span>Turn-by-turn guidance</span>
+                        <span>Silves · Carvoeiro · Alvor · Portimão · Benagil · Monchique &amp; more</span>
                     </div>
                 </div>
 
-                <p class="routes">
-                    SILVES, CARVOEIRO, ALVOR, PORTIMÃO, BENAGIL, MONCHIQUE &amp; MORE.
-                </p>
-
-                <img src="img/til.png" alt="" class="til bottom">
-
+                <img src="img/til.png" alt="" class="til til-bottom">
             </aside>
-
         </div>
     </section>
 
-    <!-- OPTIONAL IMAGE FOR SEO -->
     <img src="img/bg1.jpg" alt="Cycling in Ferragudo Algarve" class="seo-only">
 
-    <!-- SCRIPTS -->
     <script src="js/script.js"></script>
-
 </body>
 </html>
